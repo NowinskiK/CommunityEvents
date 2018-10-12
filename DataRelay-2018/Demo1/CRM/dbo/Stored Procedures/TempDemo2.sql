@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE [dbo].[TempDemo2]
+AS
+BEGIN	
+	IF 0=1 CREATE TABLE #TempTable (ID int);	
+
+	SELECT [ID] FROM #TempTable;
+
+RETURN 0
+END
