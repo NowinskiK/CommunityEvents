@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE [dbo].[TempDemo1]
+AS
+BEGIN
+
+CREATE TABLE #TempTable (Id INT);
+EXEC dbo.TempDemo2;
+
+END
+GO
