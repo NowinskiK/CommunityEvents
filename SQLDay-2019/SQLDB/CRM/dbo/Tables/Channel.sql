@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Channel](
+	[ChannelId] [int] IDENTITY(1,1) NOT NULL,
+	[Label] [nvarchar](100) NOT NULL,
+	[Name] [nvarchar](20) NULL,
+	[Description] [varchar](50) NULL,
+ CONSTRAINT [PK_Channel] PRIMARY KEY CLUSTERED 
+(
+	[ChannelId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
