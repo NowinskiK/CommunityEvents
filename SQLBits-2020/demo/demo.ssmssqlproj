@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="demo">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="127.0.0.1,1433:sa">
+          <Created>2018-06-21T20:09:49.3889397+01:00</Created>
+          <Type>SQL</Type>
+          <Server>127.0.0.1,1433</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB>SandboxAnalytics</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="sqlplayer-dwh.database.windows.net:dwh">
+          <Created>2018-06-21T20:09:37.0149193+01:00</Created>
+          <Type>SQL</Type>
+          <Server>sqlplayer-dwh.database.windows.net</Server>
+          <UserName>dwh</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+        <ConnectionNode Name="sqlplayer-dwh.database.windows.net:LoaderRC60">
+          <Created>2018-07-04T12:55:50.1213507+01:00</Created>
+          <Type>SQL</Type>
+          <Server>sqlplayer-dwh.database.windows.net</Server>
+          <UserName>LoaderRC60</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="00-Provision.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>00-Provision.sql</FullPath>
+        </FileNode>
+        <FileNode Name="01-SourceStorage.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>01-SourceStorage.sql</FullPath>
+        </FileNode>
+        <FileNode Name="09---------DISTRIBUTION------.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>09---------DISTRIBUTION------.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10-RoundRobin.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>10-RoundRobin.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11-HASH.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>11-HASH.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12-Replicated.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>12-Replicated.sql</FullPath>
+        </FileNode>
+        <FileNode Name="19----------------------.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>19----------------------.sql</FullPath>
+        </FileNode>
+        <FileNode Name="20-DimDate-stats.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>20-DimDate-stats.sql</FullPath>
+        </FileNode>
+        <FileNode Name="39--------- WWI ---------.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>39--------- WWI ---------.sql</FullPath>
+        </FileNode>
+        <FileNode Name="40-WWI-provision.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>40-WWI-provision.sql</FullPath>
+        </FileNode>
+        <FileNode Name="41-create-tables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:LoaderRC60</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>LoaderRC60</AssociatedConnUserName>
+          <FullPath>41-create-tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="42-Import-Data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>42-Import-Data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="43-Replicated-tables.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>43-Replicated-tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="45-ImportCSV-withRejectedRows.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>45-ImportCSV-withRejectedRows.sql</FullPath>
+        </FileNode>
+        <FileNode Name="49--------- DMW --------.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>49--------- DMW --------.sql</FullPath>
+        </FileNode>
+        <FileNode Name="50-info.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>50-info.sql</FullPath>
+        </FileNode>
+        <FileNode Name="50-monitor-loads.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>50-monitor-loads.sql</FullPath>
+        </FileNode>
+        <FileNode Name="51-microsoft-views.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>51-microsoft-views.sql</FullPath>
+        </FileNode>
+        <FileNode Name="52-prc_workload_management_by_DWU.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>52-prc_workload_management_by_DWU.sql</FullPath>
+        </FileNode>
+        <FileNode Name="60-monitor.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>60-monitor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="61-monitor-tempdb.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>61-monitor-tempdb.sql</FullPath>
+        </FileNode>
+        <FileNode Name="62-monitor-memory.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>62-monitor-memory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="63-monitor-transaction-log.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>63-monitor-transaction-log.sql</FullPath>
+        </FileNode>
+        <FileNode Name="64-Columnstore-Catalog-Views.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>64-Columnstore-Catalog-Views.sql</FullPath>
+        </FileNode>
+        <FileNode Name="65-monitor-rowgroup-quality.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:LoaderRC60</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>LoaderRC60</AssociatedConnUserName>
+          <FullPath>65-monitor-rowgroup-quality.sql</FullPath>
+        </FileNode>
+        <FileNode Name="70-------IMPORT---------------.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>70-------IMPORT---------------.sql</FullPath>
+        </FileNode>
+        <FileNode Name="71-Load-fact_Order.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>71-Load-fact_Order.sql</FullPath>
+        </FileNode>
+        <FileNode Name="72-votes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>72-votes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="74-votes2-zip----error.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>74-votes2-zip----error.sql</FullPath>
+        </FileNode>
+        <FileNode Name="75-nyctaxi.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>75-nyctaxi.sql</FullPath>
+        </FileNode>
+        <FileNode Name="76-nyctaxi-multiple-files.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>76-nyctaxi-multiple-files.sql</FullPath>
+        </FileNode>
+        <FileNode Name="77-nyctaxi-multiple-compressed-files.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>77-nyctaxi-multiple-compressed-files.sql</FullPath>
+        </FileNode>
+        <FileNode Name="78-nyctaxi-multiple-uncompressed-files.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:LoaderRC60</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>LoaderRC60</AssociatedConnUserName>
+          <FullPath>78-nyctaxi-multiple-uncompressed-files.sql</FullPath>
+        </FileNode>
+        <FileNode Name="79-monitoring.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>79-monitoring.sql</FullPath>
+        </FileNode>
+        <FileNode Name="80-Copy-entire-table.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>80-Copy-entire-table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="90---------------Elastic-Query---TODO.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>90---------------Elastic-Query---TODO.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sqlplayer-dwh.database.windows.net:False:dwh</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sqlplayer-dwh.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>dwh</AssociatedConnUserName>
+          <FullPath>SQLQuery3.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
