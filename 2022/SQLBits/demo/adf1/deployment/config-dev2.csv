@@ -1,0 +1,2 @@
+type,name,path,value
+trigger,TempoTrigger,typeProperties.recurrence.schedule,{"minutes": [0],"hours": [7]}
