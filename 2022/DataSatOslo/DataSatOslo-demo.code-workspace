@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\GitAz\\sqlplayer\\DataServices\\ADF-demo\\BigFactoryTest"
+		},
+		{
+			"path": "..\\..\\GitHub\\!SQLPlayer\\azure.datafactory.tools"
+		},
+		{
+			"name": "ADF-demo",
+			"path": "..\\..\\GitAz\\SQLPlayer\\DataServices\\ADF-demo"
+		},
+		{
+			"path": "..\\GitAz\\SQLPlayer\\ADF-demo\\BigFactoryTest"
+		}
+	],
+	"settings": {}
+}
