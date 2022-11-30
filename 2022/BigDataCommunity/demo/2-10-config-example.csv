@@ -1,0 +1,11 @@
+type,name,path,value
+linkedService,LS_AzureKeyVault,$.properties.typeProperties.baseUrl,"https://kv-blog-uat.vault.azure.net/"
+linkedService,LS_BlobSqlPlayer,typeProperties.connectionString,"DefaultEndpointsProtocol=https;AccountName=blobstorageuat;EndpointSuffix=core.windows.net;"
+# This is comment - the line will be omitted
+pipeline,PL_CopyMovies,activities[0].outputs[0].parameters.BlobContainer,UAT
+pipeline,PL_CopyMovies_with_param,parameters.DstBlobContainer.defaultValue,UAT
+pipeline,PL_Wait_Dynamic,parameters.WaitInSec,"{'type': 'int32','defaultValue': 22}"
+# MINUS means the desired action is to REMOVE encryptedCredential:
+linkedService,BlobSampleData,-typeProperties.encryptedCredential,
+# PLUS means the desired action is to ADD new property with associated value:
+linkedService,BlobSampleData,+typeProperties.accountKey,"$($Env:VARIABLE)"
