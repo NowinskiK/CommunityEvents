@@ -1,0 +1,33 @@
+{
+    "name": "TempoTrigger",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Stopped",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "Tempo",
+                    "type": "PipelineReference"
+                }
+            }
+        ],
+        "type": "ScheduleTrigger",
+        "typeProperties": {
+            "recurrence": {
+                "frequency": "Day",
+                "interval": 1,
+                "startTime": "2021-05-05T05:42:00",
+                "endTime": "2022-05-12T10:29:46",
+                "timeZone": "India Standard Time",
+                "schedule": {
+                    "minutes": [
+                        0
+                    ],
+                    "hours": [
+                        7
+                    ]
+                }
+            }
+        }
+    }
+}
